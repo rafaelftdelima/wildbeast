@@ -1,0 +1,24 @@
+/* CSS reset */
+
+body,
+h1,
+p,
+li,
+blockquote {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Vollkorn", Georgia, serif;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
