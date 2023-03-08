@@ -145,6 +145,46 @@ body {
     background: #b07dfb;
 }
 
+@keyframes arrow {
+    from {
+        right: 30px;
+    }
+    to {
+        right: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .navegation {
+        padding: 0px 30px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        position: relative;
+    }
+
+    .navegation::after {
+        content: "→";
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        color: rgba(0, 0, 0, 0.3);
+        animation: arrow 0.5s ease-in 0s infinite alternate;
+    }
+
+    .navegation__list {
+        display: flex;
+    }
+
+    .navegation__list li {
+        flex: 1 0 60px;
+    }
+
+    .navegation__list a {
+        margin: 30px 30px 30px 0px;
+    }
+}
+
 /* Content section rules */
 
 .content {
