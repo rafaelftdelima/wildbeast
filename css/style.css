@@ -306,6 +306,22 @@ body {
     border-top: 2px solid #b07dfb;
 }
 
+@media (max-width: 600px) {
+    .content__image {
+        width: 100%;
+    }
+
+    .content {
+        grid-template-columns: 100%;
+    }
+
+    .content__text--marked {
+        max-width: initial;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
 /* ADS section rules */
 
 .ads {
@@ -315,6 +331,7 @@ body {
     gap: 30px;
     background: #fafbfc;
     padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* Footer section rules */
