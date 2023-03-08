@@ -41,6 +41,30 @@ body {
     ;
 }
 
+@media (max-width: 1200px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "navegation content content"
+            "navegation ads ads"
+            "footer footer footer"
+        ;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        grid-template-areas:
+            "header"
+            "navegation"
+            "content"
+            "ads"
+            "footer"
+        ;
+        grid-template-columns: 100%;
+    }
+}
+
 /* Header section rules */
 
 .header {
